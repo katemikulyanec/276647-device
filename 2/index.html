@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Девайс</title>
+    <base href="https://htmlacademy-htmlcss.github.io/276647-device/2/">
+</head>
+  <body>
+    <!-- Get it start! -->
+    <!-- Классы с большего произвольные употребляю. В курсе, что везде вездесущий БЭМ, но пока не до него) -->
+    <!-- Header здесь замысловатый получается. На какие секции разбивать. Хотелось бы по этому поводу потолковать -->
+    <header class="main-header">
+      <!-- Здесь я логотип в <div> положил, так как если оформлять ссылкой то она должна куда-то вести, а так как страница главная то атрибут href пустой будет и мне представляется это не комильфо. Хотя уверен на 100% что будет <a>, но отталкиваюсь от своих знаний. Жду пояснений))) и новых знаний) -->
+      <div class="main-logo">
+        <img src="img/logo.svg" alt="Логотип компании" width="160" height="35">
+      </div>
+      <!--  Навигацию здесь решил на две части разбить. Руководствуясь сеткой макета и дальнейшей её  стилизацией, чтоб удобнее по краям было развести, ну, и по логике). Первая часть <main-nav> состоит из пункта "поиск" и выпадающего списка "каталог товаров". Товар <item> здесь вообще ключевая вещь в навигации, судя по дизайну. Поэтому "поиск" туда (в <main-nav>) логически очень хорошо вписывается, так как именно товары через него мы и будем искать.
+      _
+      Вторая часть навигации тоже из двух секций будет стоять. "Функциональной" так сказать (войти, сравнить, карзина) и "информативной" (доставка, гарантия, контакты). Обе секции через <ul> оформляется. Через <ul>, я так понимаю в HTML5 много что оформляется)) плюс предпочтения самой академии) Я думаю, с ними часто будем встречаться)-->
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li class="find"><span>Поиск по сайту</span></li>
+          <li class="catalog"><span>Каталог товаров</span>
+            <ul class="catalog-list">
+              <!-- Здесь, вероятно, может быть список из трех списков - для трех колонок. Но такая вложенность меня пугает, поэтому пронумеровал колонки классом .catalog-col-n -->
+              <li class="catalog-item catalog-col-1"><a href="#">Виртуальная реальность</a></li>
+              <li class="catalog-item catalog-col-1"><a href="#">Моноподы для селфи</a></li>
+              <li class="catalog-item catalog-col-1"><a href="#">Экшн-камеры</a></li>
+              <li class="catalog-item catalog-col-2"><a href="#">Фитнес-браслеты</a></li>
+              <li class="catalog-item catalog-col-2"><a href="#">Умные часы</a></li>
+              <li class="catalog-item catalog-col-3"><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <section class="second-nav">
+        <!-- Опять списки!!! Много списков!) -->
+        <ul class="functional-nav">
+          <li><span>Войти</span></li>
+          <li><span>Cравнить</span></li>
+          <li><span>Корзина</span></li>
+        </ul>
+        <ul class="info-nav">
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+      </section>
+    </header>
+
+    <main>
+      <h1 class="visually-hidden">Интернет-магзин "Device"</h1>
+
+      <section class="slider">
+        <section class="slider-img">
+          <img src="img/slider-img-1.png" alt="Селфи палка" width="380" height="500">
+        </section>
+        <section class="slider-info">
+          <b>Делай селфи,<br>
+            как Бен Стиллер! </b>
+          <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
+            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+          <div>
+            <input type="radio">
+          </div>
+          <span class="button slider-button"><a #>Подробнее</a></span>
+          <table>
+            <tr>
+              <td>8,5 м</td>
+              <td>5 кг</td>
+              <td>Карбон</td>
+            </tr>
+            <tr>
+              <td>Длина палки</td>
+              <td>Вес палки</td>
+              <td>Материал</td>
+            </tr>
+          </table>
+
+        </section>
+      </section>
+
+      <section class="items">
+        <h2 class="visually-hidden">Каталог товаров</h2>
+        <ul class="items-list">
+          <li class="item">
+            <h3>Виртуальная реальность</h3>
+            <div></div>
+          </li>
+          <li class="item">
+            <h3>Моноподы для селфи</h3>
+            <div></div>
+          </li>
+          <li class="item">
+            <h3>Экшн-камеры</h3>
+            <div></div>
+          </li>
+          <li class="item">
+            <h3>Фитнес-браслеты</h3>
+            <div></div>
+          </li>
+          <li class="item">
+            <h3>Умные часы</h3>
+            <div></div>
+          </li>
+          <li class="item">
+            <h3>Квадрокоптеры</h3>
+            <div></div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="features">
+        <h2 class="visually-hidden">Услуги</h2>
+        <h3>Доставка</h3>
+        <dl>
+          <dt>Доставка</dt>
+            <dd>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</dd>
+        </dl>
+        <h3>Гарантия</h3>
+        <dl>
+          <dt></dt>
+            <dd></dd>
+        </dl>
+        <h3>Кредит</h3>
+        <dl>
+          <dt></dt>
+            <dd></dd>
+        </dl>
+      </section>
+
+      <section class="logos">
+        <ul>
+          <li><a href="#"><img src="img/partner-logo-1.svg" alt="DJI" width="150" height="80"></a></li>
+          <li><a href="#"><img src="img/partner-logo-1.svg" alt="SP Gadgets" width="150" height="80"></a></li>
+          <li><a href="#"><img src="img/partner-logo-1.svg" alt="GoPro" width="150" height="80"></a></li>
+          <li><a href="#"><img src="img/partner-logo-1.svg" alt="Vive" width="150" height="80"></a></li>
+        </ul>
+      </section>
+
+      <section class="about-us">
+        <h2>О нас</h2>
+        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+        <ul>
+          <li>Деловые Линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <span class="button about-us-button">Подробнее о нас</span>
+      </section>
+
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <a href="map.html" class="button"></a>
+        <span class="button contacts-button">Напишите нам</span>
+      </section>
+    </main>
+
+    <footer>
+      <a href="#"><img src="img/logo.svg" alt="Логотип компании" width="160" height="35"></a>
+      <ul class="functional-nav">
+        <li><a href="#">Войти</a></li>
+        <li><a href="#">Cравнить</a></li>
+        <li><a href="#">Корзина</a></li>
+      </ul>
+      <p>г. Москва, ул. Строителей, 15</p>
+      <!-- Элемент дизайна желтая полоска через <div> оформлять? -->
+      <ul class="info-nav">
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Гарантия</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>
+      <ul class="social-nav">
+        <li><a class="social-button" href="#">Фейсбук</a></li>
+        <li><a class="social-button" href="#">Инстаграм</a></li>
+        <li><a class="social-button" href="#">Твиттер</a></li>
+      </ul>
+      <p>Тел.: +7 (495) 495-95-95</p>
+      <a href="https://htmlacademy.ru"><img src="img/htmlacademy-logo.svg" alt="Логотип HTML Academy" width="40" height="50"></a>
+    </footer>
+    <!-- pop-up "Напишите нам" -->
+    <!-- pop-up "Карта" -->
+  </body>
+</html>
