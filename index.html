@@ -5,56 +5,41 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
-    <!-- Get it start! -->
-    <!-- Классы с большего произвольные употребляю. В курсе, что везде вездесущий БЭМ, но пока не до него) -->
-    <!-- Header здесь замысловатый получается. На какие секции разбивать. Хотелось бы по этому поводу потолковать -->
-    <header class="main-header">
-      <!-- Здесь я логотип в <div> положил, так как если оформлять ссылкой то она должна куда-то вести, а так как страница главная то атрибут href пустой будет и мне представляется это не комильфо. Хотя уверен на 100% что будет <a>, но отталкиваюсь от своих знаний. Жду пояснений))) и новых знаний) -->
-      <div class="main-logo">
-        <img src="img/logo.svg" alt="Логотип компании" width="160" height="35">
-      </div>
-      <!--  Навигацию здесь решил на две части разбить. Руководствуясь сеткой макета и дальнейшей её  стилизацией, чтоб удобнее по краям было развести, ну, и по логике). Первая часть <main-nav> состоит из пункта "поиск" и выпадающего списка "каталог товаров". Товар <item> здесь вообще ключевая вещь в навигации, судя по дизайну. Поэтому "поиск" туда (в <main-nav>) логически очень хорошо вписывается, так как именно товары через него мы и будем искать.
-      _
-      Вторая часть навигации тоже из двух секций будет стоять. "Функциональной" так сказать (войти, сравнить, карзина) и "информативной" (доставка, гарантия, контакты). Обе секции через <ul> оформляется. Через <ul>, я так понимаю в HTML5 много что оформляется)) плюс предпочтения самой академии) Я думаю, с ними часто будем встречаться)-->
+    <header class="main-header">     
+      <img src="img/logo.svg" alt="Логотип компании" width="160" height="35">
       <nav class="main-nav">
+        <ul class="main-nav-functional">
+          <li><a href="#">Поиск по сайту</a></li>
+          <li><a href="#">Войти</a></li>
+          <li><a href="#">Cравнить</a></li>
+          <li><a href="#">Корзина</a></li>
+        </ul>    
         <ul class="main-nav-list">
-          <li class="find"><span>Поиск по сайту</span></li>
-          <li class="catalog"><span>Каталог товаров</span>
-            <ul class="catalog-list">
-              <!-- Здесь, вероятно, может быть список из трех списков - для трех колонок. Но такая вложенность меня пугает, поэтому пронумеровал колонки классом .catalog-col-n -->
-              <li class="catalog-item catalog-col-1"><a href="#">Виртуальная реальность</a></li>
-              <li class="catalog-item catalog-col-1"><a href="#">Моноподы для селфи</a></li>
-              <li class="catalog-item catalog-col-1"><a href="#">Экшн-камеры</a></li>
-              <li class="catalog-item catalog-col-2"><a href="#">Фитнес-браслеты</a></li>
-              <li class="catalog-item catalog-col-2"><a href="#">Умные часы</a></li>
-              <li class="catalog-item catalog-col-3"><a href="#">Квадрокоптеры</a></li>
+          <li class="main-nav-catalog"><span>Каталог товаров</span>
+            <ul class="main-nav-catalog-list">
+              <li class="catalog-item"><a href="#">Виртуальная реальность</a></li>
+              <li class="catalog-item"><a href="#">Моноподы для селфи</a></li>
+              <li class="catalog-item"><a href="#">Экшн-камеры</a></li>
+              <li class="catalog-item"><a href="#">Фитнес-браслеты</a></li>
+              <li class="catalog-item"><a href="#">Умные часы</a></li>
+              <li class="catalog-item"><a href="#">Квадрокоптеры</a></li>
             </ul>
           </li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
         </ul>
       </nav>
-      <section class="second-nav">
-        <!-- Опять списки!!! Много списков!) -->
-        <ul class="functional-nav">
-          <li><span>Войти</span></li>
-          <li><span>Cравнить</span></li>
-          <li><span>Корзина</span></li>
-        </ul>
-        <ul class="info-nav">
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-      </section>
     </header>
 
     <main>
       <h1 class="visually-hidden">Интернет-магзин "Device"</h1>
 
       <section class="slider">
-        <section class="slider-img">
+        <div class="slider-img">
           <img src="img/slider-img-1.png" alt="Селфи палка" width="380" height="500">
-        </section>
-        <section class="slider-info">
+        </div>
+        <div class="slider-info">
           <b>Делай селфи,<br>
             как Бен Стиллер! </b>
           <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
@@ -62,7 +47,7 @@
           <div>
             <input type="radio">
           </div>
-          <span class="button slider-button"><a #>Подробнее</a></span>
+          <a class="button slider-button" href="#">Подробнее о нас</a>
           <table>
             <tr>
               <td>8,5 м</td>
@@ -76,7 +61,7 @@
             </tr>
           </table>
 
-        </section>
+        </div>
       </section>
 
       <section class="items">
@@ -129,6 +114,7 @@
       </section>
 
       <section class="logos">
+        <h2 class="visually-hidden">Наши партнеры</h2>
         <ul>
           <li><a href="#"><img src="img/partner-logo-1.svg" alt="DJI" width="150" height="80"></a></li>
           <li><a href="#"><img src="img/partner-logo-1.svg" alt="SP Gadgets" width="150" height="80"></a></li>
@@ -146,7 +132,7 @@
           <li>Автотрейдинг</li>
           <li>ЖелДорЭкспедиция</li>
         </ul>
-        <span class="button about-us-button">Подробнее о нас</span>
+        <a class="button about-us-button" href="#">Подробнее о нас</a>
       </section>
 
       <section class="contacts">
@@ -158,26 +144,45 @@
     </main>
 
     <footer>
-      <a href="#"><img src="img/logo.svg" alt="Логотип компании" width="160" height="35"></a>
-      <ul class="functional-nav">
-        <li><a href="#">Войти</a></li>
-        <li><a href="#">Cравнить</a></li>
-        <li><a href="#">Корзина</a></li>
+
+     <ul class="footer-nav-1">
+        <li>
+          <a href="#"><img src="img/logo.svg" alt="Логотип компании" width="160" height="35"></a>
+        </li>
+        <li>
+          <ul class="footer-functional-nav">
+            <li><a href="#">Войти</a></li>
+            <li><a href="#">Cравнить</a></li>
+            <li><a href="#">Корзина</a></li>
+          </ul>
+        </li>
+     </ul>
+
+      <ul class="footer-nav-2">
+        <li><p>г. Москва, ул. Строителей, 15</p></li>
+        <li>
+          <ul class="footer-info-nav">
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </li>
+        <li><p>Тел.: +7 (495) 495-95-95</p></li>
       </ul>
-      <p>г. Москва, ул. Строителей, 15</p>
-      <!-- Элемент дизайна желтая полоска через <div> оформлять? -->
-      <ul class="info-nav">
-        <li><a href="#">Доставка</a></li>
-        <li><a href="#">Гарантия</a></li>
-        <li><a href="#">Контакты</a></li>
+      
+      <ul class="footer-nav-3">
+        <li><div class="footer-yelow-line"></div></li>
+        <li>
+          <ul class="footer-social-nav">
+            <li><a class="social-button" href="#" target="_blank">Фейсбук</a></li>
+            <li><a class="social-button" href="#" target="_blank">Инстаграм</a></li>
+            <li><a class="social-button" href="#" target="_blank">Твиттер</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://htmlacademy.ru"><img src="img/htmlacademy-logo.svg" alt="Логотип HTML Academy" width="40" height="50"></a>
+        </li>
       </ul>
-      <ul class="social-nav">
-        <li><a class="social-button" href="#">Фейсбук</a></li>
-        <li><a class="social-button" href="#">Инстаграм</a></li>
-        <li><a class="social-button" href="#">Твиттер</a></li>
-      </ul>
-      <p>Тел.: +7 (495) 495-95-95</p>
-      <a href="https://htmlacademy.ru"><img src="img/htmlacademy-logo.svg" alt="Логотип HTML Academy" width="40" height="50"></a>
     </footer>
     <!-- pop-up "Напишите нам" -->
     <!-- pop-up "Карта" -->
