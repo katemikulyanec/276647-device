@@ -5,8 +5,188 @@
     <title>HTML Academy: Девайс</title>
   </head>
   <body>
+    <header class="main-header">     
+      <a><img src="img/logo.svg" alt="Логотип компании" width="160" height="35"></a>
+      <ul class="main-functional">
+        <li><a href="#">Поиск по сайту</a></li>
+        <li><a href="#">Войти</a></li>
+        <li><a href="#">Cравнить</a></li>
+        <li><a href="#">Корзина</a></li>
+      </ul>    
+      <nav class="main-nav">
+        <ul class="main-nav-list">
+          <li class="main-nav-catalog"><span>Каталог товаров</span>
+            <ul class="main-nav-catalog-list">
+              <li class="catalog-item"><a href="#">Виртуальная реальность</a></li>
+              <li class="catalog-item"><a href="#">Моноподы для селфи</a></li>
+              <li class="catalog-item"><a href="#">Экшн-камеры</a></li>
+              <li class="catalog-item"><a href="#">Фитнес-браслеты</a></li>
+              <li class="catalog-item"><a href="#">Умные часы</a></li>
+              <li class="catalog-item"><a href="#">Квадрокоптеры</a></li>
+            </ul>
+          </li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Гарантия</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </header>
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
+    <main>
+      <h1 class="visually-hidden">Интернет-магзин "Device"</h1>
 
+      <section class="slider">
+        <div class="slider-img">
+          <img src="img/slider-img-1.png" alt="Селфи палка" width="380" height="500">
+        </div>
+        <div class="slider-info">
+          <b>Делай селфи,<br>
+            как Бен Стиллер! </b>
+          <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
+            Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+          <div>
+            <input type="radio">
+          </div>
+          <a class="button slider-button" href="#">Подробнее о нас</a>
+          <table>
+            <tr>
+              <td>8,5 м</td>
+              <td>5 кг</td>
+              <td>Карбон</td>
+            </tr>
+            <tr>
+              <td>Длина палки</td>
+              <td>Вес палки</td>
+              <td>Материал</td>
+            </tr>
+          </table>
+
+        </div>
+      </section>
+
+      <section class="items">
+        <h2 class="visually-hidden">Каталог товаров</h2>
+        <ul class="items-list">
+          <li class="item">
+            <h3>Виртуальная реальность</h3>
+            <div></div>
+          </li>
+          <li class="item">
+            <h3>Моноподы для селфи</h3>
+            <div></div>
+          </li>
+          <li class="item">
+            <h3>Экшн-камеры</h3>
+            <div></div>
+          </li>
+          <li class="item">
+            <h3>Фитнес-браслеты</h3>
+            <div></div>
+          </li>
+          <li class="item">
+            <h3>Умные часы</h3>
+            <div></div>
+          </li>
+          <li class="item">
+            <h3>Квадрокоптеры</h3>
+            <div></div>
+          </li>
+        </ul>
+      </section>
+
+      <section class="features">
+        <h2 class="visually-hidden">Услуги</h2>
+        <h3>Доставка</h3>
+        <dl>
+          <dt>Доставка</dt>
+            <dd>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</dd>
+        </dl>
+        <h3>Гарантия</h3>
+        <dl>
+          <dt></dt>
+            <dd></dd>
+        </dl>
+        <h3>Кредит</h3>
+        <dl>
+          <dt></dt>
+            <dd></dd>
+        </dl>
+      </section>
+
+      <section class="logos">
+        <h2 class="visually-hidden">Наши партнеры</h2>
+        <ul>
+          <li><a href="#"><img src="img/partner-logo-1.svg" alt="DJI" width="150" height="80"></a></li>
+          <li><a href="#"><img src="img/partner-logo-1.svg" alt="SP Gadgets" width="150" height="80"></a></li>
+          <li><a href="#"><img src="img/partner-logo-1.svg" alt="GoPro" width="150" height="80"></a></li>
+          <li><a href="#"><img src="img/partner-logo-1.svg" alt="Vive" width="150" height="80"></a></li>
+        </ul>
+      </section>
+
+      <section class="about-us">
+        <h2>О нас</h2>
+        <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
+        <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
+        <ul>
+          <li>Деловые Линии</li>
+          <li>Автотрейдинг</li>
+          <li>ЖелДорЭкспедиция</li>
+        </ul>
+        <a class="button about-us-button" href="#">Подробнее о нас</a>
+      </section>
+
+      <section class="contacts">
+        <h2>Контакты</h2>
+        <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
+        <a href="map.html" class="button">
+          <img src="img/map.png" alt="Карта проезда">
+        </a>
+        <span class="button contacts-button">Напишите нам</span>
+      </section>
+    </main>
+
+    <footer>
+
+     <ul class="footer-nav-1">
+        <li>
+          <a href="#"><img src="img/logo.svg" alt="Логотип компании" width="160" height="35"></a>
+        </li>
+        <li>
+          <ul class="footer-functional-nav">
+            <li><a href="#">Войти</a></li>
+            <li><a href="#">Cравнить</a></li>
+            <li><a href="#">Корзина</a></li>
+          </ul>
+        </li>
+     </ul>
+
+      <ul class="footer-nav-2">
+        <li><p>г. Москва, ул. Строителей, 15</p></li>
+        <li>
+          <ul class="footer-info-nav">
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </li>
+        <li><p>Тел.: +7 (495) 495-95-95</p></li>
+      </ul>
+      
+      <ul class="footer-nav-3">
+        <li><div class="footer-yelow-line"></div></li>
+        <li>
+          <ul class="footer-social-nav">
+            <li><a class="social-button" href="#" target="_blank">Фейсбук</a></li>
+            <li><a class="social-button" href="#" target="_blank">Инстаграм</a></li>
+            <li><a class="social-button" href="#" target="_blank">Твиттер</a></li>
+          </ul>
+        </li>
+        <li>
+          <a href="https://htmlacademy.ru"><img src="img/htmlacademy-logo.svg" alt="Логотип HTML Academy" width="40" height="50"></a>
+        </li>
+      </ul>
+    </footer>
+    <!-- pop-up "Напишите нам" -->
+    <!-- pop-up "Карта" -->
   </body>
 </html>
