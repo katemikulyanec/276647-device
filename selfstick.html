@@ -16,8 +16,8 @@
         <form class="main-search-form" action="https://echo.htmlacademy.ru" method="GET">
           <p class="search">
             <label class="visually-hidden" for="search">Поиск по сайту</label>
-            <input type="image" src="img/search.svg" alt="Поиск" width="16" height="16">
             <input type="search" name="search" id="search" placeholder="Поиск по сайту">
+            <button class="button-search" type="submit">Найти</button>
           </p>
         </form>
       </li>
@@ -66,7 +66,7 @@
       <form class="filter" method="get" action="https://echo.htmlacademy.ru">
         <fieldset>
           <legend>Стоимость</legend>
-          <input type="range" name="cost" min="0" max="10000" step="500">
+          <input type="range" name="cost" min="0" max="10000" step="100">
         </fieldset>
         <fieldset>
           <legend>Цвет</legend>
@@ -112,129 +112,131 @@
 
     <section class="catalog">
       <h2 class="visually-hidden">Перечень товаров</h2>
-      <section class="sorting">
-        <h3>Сортировка</h3>
-        <ul class="sorting-nav">
-          <li><span>По цене</span></li>
-          <li><span>По типу</span></li>
-          <li><span>По популярности</span></li>
-        </ul>
-        <div class="sorting-pagination">
-          <span class="sorting-pagination-up"></span>
-          <span class="sorting-pagination-down"></span>
-        </div>
-        <section class="catalog-list">
-          <ul>
-            <li class="catalog-item">
+      <div class="wrap-sorting">
+        <section class="sorting">
+          <h3>Сортировка</h3>
+          <ul class="sorting-nav">
+            <li><a href="#">По цене</a></li>
+            <li><a href="#">По типу</a></li>
+            <li><a href="#">По популярности</a></li>
+          </ul>
+          <div class="sorting-pagination">
+            <span class="sorting-pagination-up"></span>
+            <span class="sorting-pagination-down"></span>
+          </div>
+        </section>
+      </div>  
+      <section class="catalog-list">
+        <ul>
+          <li class="catalog-item">
+            <div class="catalog-item-wrap-text">
               <h3>
                 <a href="#">Любительская селфи-палка</a>
               </h3>
-              <img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
-              <div class="catalog-item-hover">
-                <a href="#">В корзину</a>
-                <a href="#">Добавить к сравнению</a>
-              </div>
               <b class="catalog-item-price">500 руб.</b>
-            </li>
-            <li class="catalog-item">
+            </div>
+            <img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
+            <div class="catalog-item-hover">
+              <a href="#">В корзину</a>
+              <a href="#">Добавить к сравнению</a>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <div class="catalog-item-wrap-text">
               <h3>
                 <a href="#">Профессиональная селфи-палка</a>
               </h3>
-              <img src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
-              <div class="catalog-item-hover">
-                <a href="#">В корзину</a>
-                <a href="#">Добавить к сравнению</a>
-              </div>
               <b class="catalog-item-price">1 500 руб.</b>
-            </li>
-            <li class="catalog-item">
+            </div>
+            <img src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
+            <div class="catalog-item-hover">
+              <a href="#">В корзину</a>
+              <a href="#">Добавить к сравнению</a>
+            </div>
+          </li>
+          <li class="catalog-item">
+            <div class="catalog-item-wrap-text">
               <h3>
                 <a href="#">Непотопляемая селфи-палка</a>
               </h3>
-              <img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
-              <div class="catalog-item-hover">
-                <a href="#">В корзину</a>
-                <a href="#">Добавить к сравнению</a>
-              </div>
               <b class="catalog-item-price">2 500 руб.</b>
-            </li>
-            <li class="catalog-item"> 
+            </div>
+            <img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
+            <div class="catalog-item-hover">
+              <a href="#">В корзину</a>
+              <a href="#">Добавить к сравнению</a>
+             </div>
+          </li>
+          <li class="catalog-item"> 
+            <div class="catalog-item-wrap-text">
               <h3>
-                <a href="#">Селфи-палка «Следуй за мной»</a></h3>
-              <img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
-              <div class="catalog-item-hover">
-                <a href="#">В корзину</a>
-                <a href="#">Добавить к сравнению</a>
-              </div>
-              <b class="catalog-item-price">4 900 руб.</b>
-            </li>
-          </ul>
-        </section>
+                <a href="#">Селфи-палка «Следуй за мной»</a>
+              </h3>
+            </div>
+            <b class="catalog-item-price">4 900 руб.</b>
+            <img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
+            <div class="catalog-item-hover">
+              <a href="#">В корзину</a>
+              <a href="#">Добавить к сравнению</a>
+            </div>
+          </li>
+        </ul>
+      </section>
+      <div class="wrap-pagination">
         <section class="pagination-list">
           <ul>
-            <li class="pagination-item"><a>Назад</a></li>
+            <li class="pagination-item"><a href="#">Назад</a></li>
             <li class="pagination-item pagination-item-current"><a>1</a></li>
-            <li class="pagination-item"><a>2</a></li>
-            <li class="pagination-item"><a>3</a></li>
-            <li class="pagination-item"><a>Вперед</a></li>
+            <li class="pagination-item"><a href="#">2</a></li>
+            <li class="pagination-item"><a href="#">3</a></li>
+            <li class="pagination-item"><a href="#">Вперед</a></li>
           </ul>
         </section>
-      </section>
+      </div>
     </section>
   </main>
 
   <footer>
 
-    <ul class="footer-nav-1">
-      <li>
-        <a href="#"><img src="img/main-logo.svg" alt="Логотип компании" width="160" height="35"></a>
-      </li>
-      <li>
-        <ul class="footer-nav-functional">
-          <li class="footer-nav-user"><a href="#">Валентин Петухов</a></li>
-          <li class="footer-nav-login"><a href="#">Войти</a></li>
-          <li class="footer-nav-compare"><a href="#">Cравнить</a></li>
-          <li class="footer-nav-cart"><a href="#">Корзина</a></li>
-         </ul>
-       </li>
-    </ul>
+    <div class="footer-nav-1">
+      <a href="index.html"><img src="img/main-logo.svg" alt="Логотип компании" width="160" height="35"></a>
+      <ul class="footer-nav-functional">
+        <li class="footer-nav-user"><a href="#">Валентин Петухов</a></li>
+        <li class="footer-nav-login"><a href="#">Войти</a></li>
+        <li class="footer-nav-compare"><a href="#">Cравнить</a></li>
+        <li class="footer-nav-cart"><a href="#">Корзина</a></li>
+    </div>
 
-     <ul class="footer-nav-2">
-      <li><p>г. Москва, ул. Строителей, 15</p></li>
-      <li>
-        <ul class="footer-nav-info">
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </li>
-      <li><p>Тел.: +7 (495) 495-95-95</p></li>
-    </ul>
+    <div class="footer-nav-2">
+      <p>г. Москва, ул. Строителей, 15</p></li>
+      <ul class="footer-nav-info">
+        <li><a href="#">Доставка</a></li>
+        <li><a href="#">Гарантия</a></li>
+        <li><a href="#">Контакты</a></li>
+      </ul>>
+      <p>Тел.: +7 (495) 495-95-95</p>
+    </div>
      
-    <ul class="footer-nav-3">
-      <li><div class="footer-nav-yelow-line"></div></li>
-      <li>
-        <ul class="footer-nav-social">
-          <li><a class="social-button" href="#" target="_blank">Фейсбук</a></li>
-          <li><a class="social-button" href="#" target="_blank">Инстаграм</a></li>
-          <li><a class="social-button" href="#" target="_blank">Твиттер</a></li>
-        </ul>
-      </li>
-      <li>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="Логотип HTML Academy" width="40" height="50"></a>
-      </li>
-    </ul>
+    <div class="footer-nav-3">
+      <div class="footer-nav-yelow-line"></div>
+      <ul class="footer-nav-social">
+        <li><a class="social-button" href="#" target="_blank">Фейсбук</a></li>
+        <li><a class="social-button" href="#" target="_blank">Инстаграм</a></li>
+        <li><a class="social-button" href="#" target="_blank">Твиттер</a></li>
+      </ul>
+      <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="Логотип HTML Academy" width="40" height="50"></a>
+    </div>
   </footer>
   <!-- pop-up "Напишите нам" -->
   <div class="modal write-us">
       <form action="#" method="POST">
         <p class="write-us-item">
           <label for="write-us-name">Ваше имя:</label>
-          <input type="text" name="name" id="write-us-name" value="Имя Фамилия">
+          <input type="text" name="name" id="write-us-name" placeholder="Имя Фамилия">
         </p>
         <p class="write-us-item">
           <label for="write-us-email">Ваш e-mail:</label>
-          <input type="text" name="email" id="write-us-email" value="email@example.com">
+          <input type="text" name="email" id="write-us-email" placeholder="email@example.com">
         </p>
         <p class="write-us-item">
           <label for="write-us-email-text">Текст письма:</label>
@@ -244,7 +246,7 @@
         <!--нет атрибута value у тега. как добавить описание к полю?-->
         <button class="modal-send" type="submit">Отправить</button>
       </form>
-      <button class="modal-close" type="button"><img src="img/modal-close.svg" alt="Закрыть окно входа" width="55" height="55">Закрыть</button>
+      <button class="modal-close" type="button">Закрыть</button>
     </div>
     
 </body>
