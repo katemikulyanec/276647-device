@@ -4,6 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <title>Device Моноподы для селфи</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -58,7 +60,7 @@
     <ul class="breadcrums">
       <li><a href="index.html">Главная</a></li>
       <li><a href="catalog.html">Каталог товаров</a></li>
-      <li>Моноподы для селфи</li>
+      <li class="breadcrums-current">Моноподы для селфи</li>
     </ul>
 
     <section class="filters">
@@ -121,8 +123,8 @@
             <li><a href="#">По популярности</a></li>
           </ul>
           <div class="sorting-pagination">
-            <span class="sorting-pagination-up"></span>
-            <span class="sorting-pagination-down"></span>
+            <a href="#" class="sorting-pagination-up"></a>
+            <a href="#" class="sorting-pagination-down"></a>
           </div>
         </section>
       </div>  
@@ -172,8 +174,8 @@
               <h3>
                 <a href="#">Селфи-палка «Следуй за мной»</a>
               </h3>
+              <b class="catalog-item-price">4 900 руб.</b>
             </div>
-            <b class="catalog-item-price">4 900 руб.</b>
             <img src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
             <div class="catalog-item-hover">
               <a href="#">В корзину</a>
@@ -185,11 +187,11 @@
       <div class="wrap-pagination">
         <section class="pagination-list">
           <ul>
-            <li class="pagination-item"><a href="#">Назад</a></li>
-            <li class="pagination-item pagination-item-current"><a>1</a></li>
-            <li class="pagination-item"><a href="#">2</a></li>
-            <li class="pagination-item"><a href="#">3</a></li>
-            <li class="pagination-item"><a href="#">Вперед</a></li>
+            <li class="next-back"><a href="#">Назад</a></li>
+            <li class="number-current number"><a>1</a></li>
+            <li class="number"><a href="#">2</a></li>
+            <li class="number"><a href="#">3</a></li>
+            <li class="next-back"><a href="#">Вперед</a></li>
           </ul>
         </section>
       </div>
@@ -198,7 +200,7 @@
 
   <footer>
 
-    <div class="footer-nav-1">
+    <div class="footer-top">
       <a href="index.html"><img src="img/main-logo.svg" alt="Логотип компании" width="160" height="35"></a>
       <ul class="footer-nav-functional">
         <li class="footer-nav-user"><a href="#">Валентин Петухов</a></li>
@@ -207,17 +209,17 @@
         <li class="footer-nav-cart"><a href="#">Корзина</a></li>
     </div>
 
-    <div class="footer-nav-2">
+    <div class="footer-middle">
       <p>г. Москва, ул. Строителей, 15</p></li>
       <ul class="footer-nav-info">
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Гарантия</a></li>
         <li><a href="#">Контакты</a></li>
-      </ul>>
+      </ul>
       <p>Тел.: +7 (495) 495-95-95</p>
     </div>
      
-    <div class="footer-nav-3">
+    <div class="footer-bottom">
       <div class="footer-nav-yelow-line"></div>
       <ul class="footer-nav-social">
         <li><a class="social-button" href="#" target="_blank">Фейсбук</a></li>
@@ -240,10 +242,9 @@
         </p>
         <p class="write-us-item">
           <label for="write-us-email-text">Текст письма:</label>
-          <textarea name="email-text" id="write-us-email-text" rows="5" cols="60">
+          <textarea name="email-text" id="write-us-email-text" rows="5" cols="60" placeholder="В свободной форме">
           </textarea>
         </p>
-        <!--нет атрибута value у тега. как добавить описание к полю?-->
         <button class="modal-send" type="submit">Отправить</button>
       </form>
       <button class="modal-close" type="button">Закрыть</button>

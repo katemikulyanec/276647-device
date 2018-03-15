@@ -1,0 +1,421 @@
+@font-face {
+  font-family: "Open Sans";
+  src: local('Open Sans Regular'), local('OpenSans-Regular'), url("/fonts/opensans.woff2");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src: local('Open Sans Light'), local('OpenSans-Light'), url("/fonts/opensanslight.woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/gilroylight.woff2");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("/fonts/gilroyextrabold.woff2");
+  font-weight: 800;
+  font-style: normal;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+  color: #000;
+
+  background-color: #fff;
+}
+
+header {
+  background-color: #f7e296;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+.button {
+  display: inline-block;
+
+  width: 220px;
+  height: 40px;
+
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  text-align: center;
+  vertical-align: middle;
+
+  background-color: #f0c52e;
+}
+
+/* оформить логотип */
+
+/************** HEADER **************/
+
+.main-nav-catalog-list {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 15px;
+  line-height: 36px;
+  letter-spacing: normal;
+  font-weight: 300;
+  text-transform: none;
+
+}
+
+.main-nav {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  line-height: 24px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+  
+.main-functional,
+.main-nav-list,
+.main-nav-catalog-list {
+  list-style: none;
+}
+
+.main-functional a:hover,
+.main-functional a:focus,
+.main-nav-list a:hover,
+.main-nav-list a:focus,
+.main-nav-catalog-list a:hover,
+.main-nav-catalog-list a:focus {
+  color: rgba(0, 0, 0, 0.6)
+}
+
+.main-functional a:active,
+.main-nav-list a:active,
+.main-nav-catalog-list a:active {
+  color: rgba(0, 0, 0, 0.3)
+}
+
+/* Поле поиска. Нужно переназначить цвета на hover focus activ. Позже. Тут вообще масштабная стилизация этой формы предстоит. */
+
+/************** Slider **************/
+
+.slider {
+  list-style: none;
+}
+
+.slider-info b {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 56px;
+  font-weight: 800;
+}
+
+.slider-info p{
+  font-size: 15px;
+  line-height: 30px;
+  font-weight: 300;
+}
+
+.slider-button {
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2em; /* выглядит значительно больше чем в макете */
+  font-weight: 800;
+}
+
+.slider-info td {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 300;
+}
+
+.slider-info th {
+  font-size: 13px;
+  line-height: 20px;
+  font-weight: 300;
+}
+
+/************** Section "items" **************/
+
+.items-list {
+  list-style: none;
+}
+
+.items-list h3 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+}
+
+.items-list a:active {
+  color: rgba(0, 0, 0, 0.3)
+}
+
+/************** Section "section" **************/
+
+.services {
+  background-color: #e5e5e5;
+}
+
+.services h3,
+.services dt {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+}
+
+.services dt {
+  font-size: 47px;
+  line-height: 48px;
+}
+
+/* ***************?******************** */
+
+/************** Section "brands" **************/
+
+.brands ul {
+  list-style: none
+}
+
+.brands img {
+  opacity: 0.2;
+}
+
+/********* DIV "WRAP-about-us-contacts" *********/
+/************** Section "about-us" **************/
+/************** Section "contacts" **************/
+
+.wrap-about-us-contacts h2 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 800;
+}
+
+.about-us ul {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 40px;
+  font-weight: 800;
+}
+
+/****************** FOOTER ****************/
+footer {
+  color: #ffffff;
+
+  background-color: #464646;
+}
+
+footer a {
+  color: #ffffff;
+}
+
+footer ul {
+  list-style-type: none;
+}
+/*** <!-- pop-up "Напишите нам" --> ***/
+.write-us-item label {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+}
+
+.write-us-item input,
+.write-us-item textarea {
+  background-color: #f2f2f2;
+  border: 0px solid #ffffff;
+}
+
+.write-us-item input:hover,
+.write-us-item textarea:hover {
+  background-color: #eaeaea;
+}
+
+.write-us-item input:focus,
+.write-us-item textarea:focus {
+  outline: none;
+
+  color: #000000;
+
+  background-color: #ffffff;
+  border: 3px solid #f7e296;
+}
+
+/****************************************************
+**********************selfstick.html*****************
+*****************************************************/
+
+.page-title {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 47px;
+  line-height: 48px;
+  font-weight: 800;
+}
+
+.breadcrums {
+  list-style: none;
+}
+
+.breadcrums a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.breadcrums a:hover,
+.breadcrums a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.breadcrums a:active {
+  color: rgba(0, 0, 0, 0.1);
+}
+
+.breadcrums-current {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+/* ***************Section "filters"***************** */
+
+.filters {
+  background: #efefef;
+}
+
+.filters fieldset {
+  border: none;
+}
+
+.filters legend {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+
+  border-top: 2px solid #000;
+}
+
+.filters ul {
+  list-style: none;
+  line-height: 40px;
+}
+
+/*********************Section "catalog"***************** */
+        /*************Section "sorting"********* */
+
+.sorting {
+  background-color: #ebebeb;
+}
+.sorting h3 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+
+.sorting-nav {
+  list-style: none;
+}
+
+.sorting-nav a {
+  font-size: 14px;
+  line-height: 18px;
+  color: rgba(0, 0, 0, 0.3)
+}
+
+.sorting-nav a:hover,
+.sorting-nav a:focus {
+  color: rgba(0, 0, 0, 0.6)
+}
+
+.sorting-nav a:focus {
+  color: rgba(0, 0, 0, 1)
+}
+
+        /*************Section "catalog-list"********* */
+
+.catalog-list ul {
+  list-style: none;
+}
+
+.catalog-item img {
+  background-color: #eeeeee;
+}
+
+.catalog-item h3 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  font-weight: 800;
+}
+
+.catalog-item b {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 300;
+}
+
+        /*************Section "pagination-list"********* */
+
+.pagination-list {
+  background-color: #ebebeb;
+}
+.pagination-list ul {
+  list-style: none;
+}
+
+.pagination-list a {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 800;
+  letter-spacing: 0.2em;
+  color: rgba(0, 0, 0, 1);
+}
+
+.number a {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.number-current a {
+  color: rgba(0, 0, 0, 1);
+}
+
+.number a:hover,
+.number a:focus {
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.number a:active {
+  color: rgba(0, 0, 0, 1);
+}
+
+.next-back a:hover, 
+.next-back a:focus {
+  background-color: #d9d9d9;
+}
+
+.next-back a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
