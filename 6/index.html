@@ -10,8 +10,8 @@
   <body>
     <header class="main-header">     
       <a class="main-header-logo"><img src="img/main-logo.svg" alt="Логотип компании" width="160" height="35"></a>
-      <ul class="main-functional">
-        <li class="main-search">
+      <div class="main-functional">
+        <div class="main-search">
           <form class="main-search-form" action="https://echo.htmlacademy.ru" method="GET">
             <p class="search">
               <label class="visually-hidden" for="search">Поиск по сайту</label>
@@ -19,17 +19,21 @@
               <button class="button-search" type="submit">Найти</button>
             </p>
           </form>
-        </li>
-        <li class="main-login">
-          <a href="#">Войти</a>
-        </li>
-        <li class="main-compare">
-          <a href="#">Сравнить</a>
-        </li>
-        <li class="main-cart">
-          <a href="#">Корзина</a>
-        </li>
-      </ul>
+        </div>
+        <ul class="main-user">
+          <li class="main-user-login">
+            <a href="#">Войти</a>
+          </li>
+        </ul>
+       <ul class="main-options">
+          <li class="main-options-compare">
+            <a href="#">Сравнить</a>
+          </li>
+          <li class="main-options-cart">
+            <a href="#">Корзина</a>
+          </li>
+       </ul>
+      </div>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li class="main-nav-catalog"><a href="#">Каталог товаров</a>
@@ -186,7 +190,7 @@
       </section>
 
       <section class="brands">
-        <h2 class="visually-hidden">Наши партнеры</h2>
+        <h2 class="visually-hidden">Брэнды</h2>
         <ul>
           <li><a href="#"><img src="img/part-brand/brand-1.png" alt="DJI" width="260" height="100"></a></li>
           <li><a href="#"><img src="img/part-brand/brand-2.png" alt="SP Gadgets" width="260" height="100"></a></li>
@@ -202,7 +206,7 @@
           <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
           <ul>
             <li>Деловые Линии</li>
-            <li>Автотрейдинг</li>
+            <li>Автотрейдинг</li>  
             <li>ЖелДорЭкспедиция</li>
           </ul>
           <a class="button about-us-button" href="#">Подробнее о нас</a>
@@ -219,34 +223,37 @@
       </div>
     </main>
 
-    <footer>
+    <footer class="main-footer">
 
      <div class="footer-top">
-        <a href="штвуч"><img src="img/main-logo.svg" alt="Логотип компании" width="160" height="35"></a>
-        <ul class="footer-nav-functional">
-          <li class="footer-nav-login"><a href="#">Войти</a></li>
-          <li class="footer-nav-compare"><a href="#">Cравнить</a></li>
-          <li class="footer-nav-cart"><a href="#">Корзина</a></li>
+        <a class="style-g1" href="index.html"><img src="img/main-logo-fy.svg" alt="Логотип компании" width="160" height="35"></a>
+        <ul class="footer-user">
+          <li class="footer-user-login"><a class="style-g2" href="#">Войти</a></li>
+        </ul>  
+        <ul class="footer-options">
+          <li class="footer-options-compare"><a class="style-g2" href="#">Cравнить</a></li>
+          <li class="footer-options-cart"><a class="style-g2" href="#">Корзина</a></li>
+        </ul>
      </div>
 
      <div class="footer-middle">
         <p>г. Москва, ул. Строителей, 15</p></li>
-        <ul class="footer-nav-info">
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
+        <ul class="footer-nav">
+          <li><a class="style-g1" href="#">Доставка</a></li>
+          <li><a class="style-g1" href="#">Гарантия</a></li>
+          <li><a class="style-g1" href="#">Контакты</a></li>
         </ul>
         <p>Тел.: +7 (495) 495-95-95</p>
       </div>
       
       <div class="footer-bottom">
-        <div class="footer-nav-yelow-line"></div>
-        <ul class="footer-nav-social">
-          <li><a class="social-button" href="#" target="_blank">Фэйсбук</a></li>
-          <li><a class="social-button" href="#" target="_blank">Инстаграм</a></li>
-          <li><a class="social-button" href="#" target="_blank">Твиттер</a></li>
+        <div class="footer-yelow-line"></div>
+        <ul class="footer-social">
+          <li><a class="style-g2 social-button" href="#" target="_blank">Фэйсбук</a></li>
+          <li><a class="style-g2 social-button" href="#" target="_blank">Инстаграм</a></li>
+          <li><a class="style-g2 social-button" href="#" target="_blank">Твиттер</a></li>
         </ul>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="Логотип HTML Academy" width="40" height="50"></a>
+        <a class="style-g1" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html-fy.svg" alt="Логотип HTML Academy" width="40" height="50"></a>
       </div>
     </footer>
     <!-- pop-up "Напишите нам" -->
@@ -262,8 +269,7 @@
         </p>
         <p class="write-us-item">
           <label for="write-us-email-text">Текст письма:</label>
-          <textarea name="email-text" id="write-us-email-text" rows="5" cols="60" placeholder="В свободной форме">
-          </textarea>
+          <textarea name="email-text" id="write-us-email-text" rows="5" cols="60" placeholder="В свободной форме"></textarea>
         </p>
         <button class="modal-send" type="submit">Отправить</button>
       </form>
