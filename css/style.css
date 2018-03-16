@@ -27,6 +27,17 @@
 }
 
 
+.visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	width: 1px;
+	margin: -1px;
+	padding: 0;
+	border: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -38,10 +49,6 @@ body {
   color: #000;
 
   background-color: #fff;
-}
-
-header {
-  background-color: #f7e296;
 }
 
 a {
@@ -70,6 +77,11 @@ a {
 
 /************** HEADER **************/
 
+
+.main-header {
+  background-color: #f7e296;
+}
+
 .main-nav-catalog-list {
   font-family: "Open Sans", Arial, sans-serif;
   font-size: 15px;
@@ -90,8 +102,13 @@ a {
   color: #000;
 }
 
+.main-nav-catalog-list {
+  background-color: #f7e296;
+}
+
   
-.main-functional,
+.main-user,
+.main-options,
 .main-nav-list,
 .main-nav-catalog-list {
   list-style: none;
@@ -220,19 +237,45 @@ a {
 }
 
 /****************** FOOTER ****************/
-footer {
+.main-footer {
   color: #ffffff;
 
   background-color: #464646;
 }
 
-footer a {
+.main-footer a {
   color: #ffffff;
 }
 
-footer ul {
+.main-footer ul {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
+
+.style-g1 {
+  opacity: 1;
+}
+.style-g1:hover,
+.style-g1:focus {
+  opacity: 0.6;
+}
+.style-g1:active {
+  opacity: 0.3;
+}
+
+.style-g2 {
+  opacity: 0.7;
+}
+.style-g2:hover,
+.style-g2:focus {
+  opacity: 1;
+}
+.style-g2:active {
+  opacity: 0.3;
+}
+
+
 /*** <!-- pop-up "Напишите нам" --> ***/
 .write-us-item label {
   font-family: "Gilroy", Arial, sans-serif;
@@ -244,7 +287,7 @@ footer ul {
 .write-us-item input,
 .write-us-item textarea {
   background-color: #f2f2f2;
-  border: 0px solid #ffffff;
+  border: 3px solid transparent;
 }
 
 .write-us-item input:hover,
@@ -254,12 +297,11 @@ footer ul {
 
 .write-us-item input:focus,
 .write-us-item textarea:focus {
-  outline: none;
+  outline: 3px solid #f7e296;
 
   color: #000000;
 
   background-color: #ffffff;
-  border: 3px solid #f7e296;
 }
 
 /****************************************************
@@ -298,6 +340,15 @@ footer ul {
 
 .filters {
   background: #efefef;
+}
+
+.filters h2 {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
 }
 
 .filters fieldset {
@@ -351,6 +402,21 @@ footer ul {
 .sorting-nav a:focus {
   color: rgba(0, 0, 0, 1)
 }
+
+.sorting-pagination-dir {
+  opacity: 0.2;
+}
+
+.sorting-pagination-dir:hover,
+.sorting-pagination-dir:focus {
+  opacity: 0.4;
+}
+
+.sorting-pagination-dir:active {
+  opacity: inherit;
+}
+
+
 
         /*************Section "catalog-list"********* */
 
