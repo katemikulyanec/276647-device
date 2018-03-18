@@ -59,15 +59,15 @@ a {
 .button {
   display: inline-block;
 
-  width: 220px;
   height: 40px;
 
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 40px;
   letter-spacing: 0.2em;
   font-weight: 800;
   text-align: center;
+  text-transform: uppercase;
   vertical-align: middle;
 
   background-color: #f0c52e;
@@ -80,6 +80,15 @@ a {
 
 .main-header {
   background-color: #f7e296;
+}
+
+.main-header-logo:hover,
+.main-header-logo:focus {
+  opacity: 0.6;
+}
+
+.main-header-logo:active {
+  opacity: 0.3;
 }
 
 .main-nav-catalog-list {
@@ -145,14 +154,16 @@ a {
 }
 
 .slider-info p{
+  color: #464646;
   font-size: 15px;
   line-height: 30px;
   font-weight: 300;
 }
 
 .slider-button {
+  width: 220px;
   font-size: 18px;
-  line-height: 24px;
+  line-height: 40px;
   letter-spacing: 0.2em; /* выглядит значительно больше чем в макете */
   font-weight: 800;
 }
@@ -165,6 +176,7 @@ a {
 }
 
 .slider-info th {
+  color: #464646;
   font-size: 13px;
   line-height: 20px;
   font-weight: 300;
@@ -184,10 +196,10 @@ a {
 }
 
 .items-list a:active {
-  color: rgba(0, 0, 0, 0.3)
+  color: rgba(0, 0, 0, 0.3);
 }
 
-/************** Section "section" **************/
+/************** Section "services" **************/
 
 .services {
   background-color: #e5e5e5;
@@ -206,6 +218,15 @@ a {
   line-height: 48px;
 }
 
+.services .button {
+  width: 160px;
+  line-height: 40px;
+}
+
+.services .active {
+  color: #f7e184;
+  background-color: #000;
+}
 /* ***************?******************** */
 
 /************** Section "brands" **************/
@@ -218,9 +239,8 @@ a {
   opacity: 0.2;
 }
 
-/********* DIV "WRAP-about-us-contacts" *********/
-/************** Section "about-us" **************/
-/************** Section "contacts" **************/
+/***************** DIV "WRAP-about-us-contacts" *****************/
+        /************** Section "about-us" **************/
 
 .wrap-about-us-contacts h2 {
   font-family: "Gilroy", Arial, sans-serif;
@@ -236,6 +256,15 @@ a {
   font-weight: 800;
 }
 
+.about-us p,
+.contacts p {
+  color: #464646;
+}
+
+.about-us-button,
+.contacts-button {
+  width: 260px;
+}
 /****************** FOOTER ****************/
 .main-footer {
   color: #ffffff;
@@ -251,6 +280,14 @@ a {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.footer-nav a{
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 24px;
+  letter-spacing: 0.2em;
+  font-weight: 800;
 }
 
 .style-g1 {
@@ -304,6 +341,22 @@ a {
   background-color: #ffffff;
 }
 
+.modal-send {
+  height: 40px;
+  border: 0;
+
+  font-family: "Gilroy", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 40px;
+  letter-spacing: 0.2em;
+  font-weight: 800;
+  text-align: center;
+  text-transform: uppercase;
+  vertical-align: middle;
+
+  background-color: #f0c52e;
+}
+
 /****************************************************
 **********************selfstick.html*****************
 *****************************************************/
@@ -317,6 +370,7 @@ a {
 
 .breadcrums {
   list-style: none;
+  font-size: 14px;
 }
 
 .breadcrums a {
@@ -391,16 +445,20 @@ a {
 .sorting-nav a {
   font-size: 14px;
   line-height: 18px;
-  color: rgba(0, 0, 0, 0.3)
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.sorting .active {
+  color: rgba(0, 0, 0, 1);
 }
 
 .sorting-nav a:hover,
 .sorting-nav a:focus {
-  color: rgba(0, 0, 0, 0.6)
+  color: rgba(0, 0, 0, 0.6);
 }
 
 .sorting-nav a:focus {
-  color: rgba(0, 0, 0, 1)
+  color: rgba(0, 0, 0, 1);
 }
 
 .sorting-pagination-dir {
@@ -414,6 +472,10 @@ a {
 
 .sorting-pagination-dir:active {
   opacity: inherit;
+}
+
+.sorting .active {
+  opacity: 1;
 }
 
 
@@ -435,13 +497,31 @@ a {
   font-weight: 800;
 }
 
-.catalog-item b {
+.catalog-item-price {
+  color: #464646;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
   font-weight: 300;
 }
 
+.catalog-item-hover .button {
+  width: 200px;
+}
+
+.cart-add {
+  font-size: 13px;
+  line-height: 20px;
+  opacity: 0.5;
+}
+
+.cart-add:hover {
+  opacity: 1;
+}
+
+.cart-add:active {
+  opacity: 0.2;
+}
         /*************Section "pagination-list"********* */
 
 .pagination-list {
