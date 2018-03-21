@@ -212,9 +212,9 @@ a {
 }
 
 .slider {
-  list-style: none;
   margin: 0;
-  padding: 0;
+  paddin
+  list-style: none;g: 0;
 }
 
 .slide {
@@ -281,9 +281,9 @@ a {
   display: flex;
   justify-content: space-between;
 
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .items-item {
@@ -298,7 +298,6 @@ a {
 .items-item h3 {
   order: 1;
   margin: 0;
-  padding: 0;
 }
 
 .items-item div {
@@ -345,12 +344,10 @@ a {
 .services-slide {
   width: 460px;
   margin: 0;
-  padding: 0;
 }
 
 .services-info dd {
   margin: 0;
-  padding: 0;
 }
 
 .services h3,
@@ -386,9 +383,9 @@ a {
 .brands ul {
   display: flex;
   justify-content: center;
-  list-style: none;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .brands img {
@@ -437,31 +434,31 @@ a {
 }
 /****************** FOOTER ****************/
 
-.footer-wrapper {
-  width: 100%;
-
-  background-color: #464646;
-}
-
 .main-footer {
-  display: flex;
-  flex-direction: column;
+  width: 100%;
   padding: 65px 0;
   color: #ffffff;
+  background-color: #464646;
 }
 
 .footer-top {
   display: flex;
+  justify-content: space-between;
   margin-bottom: 30px;
+}
+
+.footer-top-pt2-wrapper {
+  display: flex;
 }
 
 .footer-user {
   display: flex;
   width: 260px;
   margin: 0;
-  padding: 0;
   margin-left: auto;
   margin-right: 40px;
+  padding: 0;
+  list-style: none;
 }
 
 .footer-user li:first-child {
@@ -477,6 +474,7 @@ a {
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  list-style: none;
   width: 200px;
 }
 
@@ -496,6 +494,7 @@ a {
   justify-content: space-between;
   margin: 0;
   padding: 0;
+  list-style: none;
   width: 440px;
   text-transform: uppercase;
 }
@@ -505,20 +504,23 @@ a {
   justify-content: space-between;
 }
 
+.footer-yelow-line {
+  width: 80px;
+  height: 7px;
+  background-color: #f0c52e;
+}
+
 .footer-social {
   display: flex;
   justify-content: space-around;
   width: 160px;
   margin: 0;
   padding: 0;
+  list-style: none;
 }
 
 .main-footer a {
   color: #ffffff;
-}
-
-.main-footer ul {
-  list-style-type: none;
 }
 
 .footer-nav a{
@@ -614,7 +616,6 @@ a {
 .page-title {
   margin: 0;
   margin-bottom: 35px;
-  padding: 0;
   padding-left: 60px;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 47px;
@@ -669,7 +670,6 @@ a {
   height: 70px;
   margin: 0;  
   margin-bottom: 70px;
-  padding: 0;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 70px;
@@ -713,7 +713,6 @@ width: 760px;
 .sorting h3 {
   margin: 0;
   margin-right: 50px;
-  padding: 0;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 24px;
@@ -790,9 +789,13 @@ width: 760px;
 .catalog-item {
 display: flex;
 flex-direction: column;
+max-width: 360px;
+margin-bottom: 45px;
 }
 
 .catalog-item-wrap-text {
+  display: flex;
+  justify-content: space-between;
   order: 5;
 }
 
@@ -801,8 +804,9 @@ flex-direction: column;
 }
 
 .catalog-item h3 {
+  flex-basis: 260px;
   margin: 0;
-  padding: 0;
+  margin-right: -4px;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 18px;
   line-height: 24px;
