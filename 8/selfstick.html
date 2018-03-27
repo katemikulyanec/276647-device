@@ -85,7 +85,19 @@
           <form class="filter" method="get" action="https://echo.htmlacademy.ru">
             <fieldset>
               <legend>Стоимость</legend>
-              <input type="range" name="cost" min="0" max="10000" step="100">
+              <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
+                  </div>
+                  <div class="price-controls">
+                    <label class="min-price">от <input name="min-price" type="text" value="0"></label>
+                    <label class="max-price">до <input name="max-price" type="text" value="5000"></label>
+                  </div>
+                </div>
             </fieldset>
             <fieldset>
               <legend>Цвет</legend>
@@ -169,7 +181,7 @@
               <li class="catalog-item">
                 <div class="catalog-item-wrap-text">
                   <h3>
-                    <a href="#">Профессиональная селфи-палка</a>
+                    <a href="#">Профессиональная селфи&#8209палка</a>
                   </h3>
                   <b class="catalog-item-price">1 500 руб.</b>
                 </div>
@@ -193,7 +205,7 @@
                  </div>
               </li>
               <li class="catalog-item"> 
-                <div class="catalog-item-wrap-text">
+                <div class="catalog-item-wrap-text new-item">
                   <h3>
                     <a href="#">Селфи-палка «Следуй за мной»</a>
                   </h3>
@@ -257,7 +269,7 @@
             <li><a class="style-g3 social-button" href="#" target="_blank"><img src="img/social-inst.svg" alt="Фэйсбук" width="32" height="32"></a></li>
             <li><a class="style-g3 social-button" href="#" target="_blank"><img src="img/social-tw.svg" alt="Фэйсбук" width="32" height="32"></a></li>
           </ul>
-          <a class="style-g1" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html-fy.svg" alt="Логотип HTML Academy" width="40" height="50"></a>
+          <a class="style-g1" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html-fy.svg" alt="Логотип HTML Academy" width="27" height="35"></a>
         </div>
       </div>
     </footer>
