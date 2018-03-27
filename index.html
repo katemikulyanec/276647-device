@@ -78,6 +78,24 @@
               <p>Самая длинная палка для селфи доступна в нашем магазине.<br>
                 Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p> 
               <a class="button slider-button" href="#">Подробнее</a>
+              <div class="slider-nav">
+                <form action="https://echo.htmlacademy.ru" method="POST">
+                  <ul>
+                    <li class="slider-nav-switch">
+                      <input class="visually-hidden" type="radio" name="slide-number" value="slide-1" id="slide-1" checked>
+                      <label for="slide-1"></label>
+                    </li>
+                    <li class="slider-nav-switch">
+                      <input class="visually-hidden" type="radio" name="slide-number" value="slide-2" id="slide-2">
+                      <label for="slide-2"></label>
+                    </li>
+                    <li class="slider-nav-switch">
+                      <input class="visually-hidden" type="radio" name="slide-number" value="slide-3" id="slide-3">
+                      <label for="slide-3"></label>
+                    </li>
+                  </ul>
+                </form>
+              </div>
               <table>
                 <tr>
                   <td>8,5 м</td>
@@ -128,7 +146,7 @@
                   <td>50 м</td>
                 </tr>
                 <tr>
-                  <th>Дальность полетам</th>
+                  <th>Дальность полета</th>
                   <th>Радиус поражения</th>
                 </tr>
               </table>
@@ -140,40 +158,34 @@
       <section class="items container">
         <h2 class="visually-hidden">Каталог товаров</h2>
         <ul class="items-list">
-          <li class="items-item">
-            <a href="#">
+          <li>
+            <a class="items-item item-1" href="#">
               <h3>Виртуальная реальность</h3>
-              <div></div>
             </a>
           </li>
-          <li class="items-item">
-            <a href="#">
+          <li>
+            <a class="items-item item-2" href="#">
               <h3>Моноподы<br> для селфи</h3>
-              <div></div>
             </a>
           </li>
-          <li class="items-item">
-            <a href="#">
+          <li>
+            <a class="items-item item-3" href="#">
               <h3>Экшн-камеры</h3>
-              <div></div>
             </a>
           </li>
-          <li class="items-item">
-            <a href="#">
+          <li>
+            <a class="items-item item-4" href="#">
               <h3>Фитнес-браслеты</h3>
-              <div></div>
             </a>
           </li>
-          <li class="items-item">
-            <a href="#">
+          <li>
+            <a class="items-item item-5" href="#">
               <h3>Умные часы</h3>
-              <div></div>
             </a>
           </li>
-          <li class="items-item">
-            <a href="#">
+          <li>
+            <a class="items-item item-6" href="#">
               <h3>Квадрокоптеры</h3>
-              <div></div>
             </a>
           </li>
         </ul>
@@ -183,9 +195,9 @@
         <section class="services container">
           <h2 class="visually-hidden">Наши услуги</h2>
           <div class="services-buttons">
-              <h3 class="active button">Доставка</h3>
-              <h3 class="button">Гарантия</h3>
-              <h3 class="button">Кредит</h3>
+              <a class="active button" href="#">Доставка</a>
+              <a class="button" href="#">Гарантия</a>
+              <a class="button" href="#">Кредит</a>
           </div>  
           <div class="services-info">
             <dl class="services-slide services-slide-1">
@@ -230,9 +242,8 @@
         <section class="contacts">
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-          <a href="map.html">
-            <img src="img/map.jpg" alt="Офис компании расположен по адресу улица Строителей, дом 15" width="560" height="222">
-          </a>
+          <a class="contacts-map-button" href="map.html">
+            <img src="img/map.jpg" alt="Офис компании расположен по адресу улица Строителей, дом 15" width="560" height="222"></a>
           <a href="#" class="button contacts-button">Напишите нам</a>
         </section>
       </div>
@@ -270,7 +281,7 @@
               <li><a class="style-g3 social-button" href="#" target="_blank"><img src="img/social-inst.svg" alt="Инстаграм" width="32" height="32"></a></li>
               <li><a class="style-g3 social-button" href="#" target="_blank"><img src="img/social-tw.svg" alt="Твиттер" width="32" height="32"></a></li>
             </ul>
-            <a class="style-g1" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html-fy.svg" alt="Логотип HTML Academy" width="40" height="50"></a>
+            <a class="style-g1" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html-fy.svg" alt="Логотип HTML Academy" width="27" height="35"></a>
           </div>
         </div>
       </footer>
